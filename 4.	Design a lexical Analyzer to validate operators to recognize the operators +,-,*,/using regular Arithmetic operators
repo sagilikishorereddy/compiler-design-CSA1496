@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+    char input[100];
+    int i = 0;
+
+    printf("Enter an arithmetic expression:\n");
+    scanf("%s", input);
+
+    while (input[i] != '\0') {
+        if (input[i] == '+' || input[i] == '-' || input[i] == '*' || input[i] == '/') {
+            printf("%c is an operator.\n", input[i]);
+        }
+        i++;
+    }
+
+    return 0;
+}
